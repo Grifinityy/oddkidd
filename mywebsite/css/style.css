@@ -1,0 +1,78 @@
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7deb7;
+}
+
+
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns:  20% 20% 20% 20% 20% ;
+    grid-template-rows: 5% 30% 20% 20% 10%;
+    grid-template-areas: 
+    "header header header header header"
+    "gallery main main main galler2"
+    "gallery shopall accessories about galler2"
+    "footer footer footer footer footer";
+    text-align:center;
+    grid-gap: 0.2rem;
+
+   
+    
+}
+
+header{
+    background: rgb(255, 150, 119);
+    grid-area: header;
+    border-radius:var(--main-radius);
+    padding-top: var(--main-padding);
+    
+}
+header:not(menu, h1, nav){
+    display: block;
+
+}
+main{
+     background: #ff8975;
+     grid-area: main;
+
+     background-image: url('../images/');
+    background-position: center;
+
+}
+
+#gallery{
+    background: #ff8975;
+    grid-area: gallery;
+    
+
+}
+#shopall{
+    background: #db2d2d;
+    grid-area: shopall;
+}
+#accessories{
+    background: #db2d2d;
+    grid-area: accessories; 
+}
+#about{
+    background: #db2d2d;
+    grid-area: about;
+}
+#galler2{
+    background: #ff8975;
+    grid-area: galler2;
+}
+
+footer{
+    background: rgb(255, 0, 76);
+    grid-area: footer;
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: rgb(61, 26, 44);
+}
+
